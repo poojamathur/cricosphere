@@ -5,5 +5,5 @@ package com.cricosphere.controller
  */
 class BaseController {
 
-    def index() { }
+    def index() {}
 }
