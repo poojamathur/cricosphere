@@ -14,6 +14,7 @@ class UserService {
         def user = new User()
         user.username = params.email
         user.password = params.password
+        user.user_name = params.Fname + ' ' + params.Lname
         println 'User Id: '  + user.id 
         user.save()
         println 'User Id: '  + user.id 
