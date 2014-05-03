@@ -126,13 +126,15 @@ grails.plugin.springsecurity.userLookup.userDomainClassName = 'com.cricosphere.d
 grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'com.cricosphere.domain.UserRole'
 grails.plugin.springsecurity.authority.className = 'com.cricosphere.domain.Role'
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [
-	'/':                              ['permitAll'],
-	'/index':                         ['permitAll'],
-	'/index.gsp':                     ['permitAll'],
-	'/**/js/**':                      ['permitAll'],
-	'/**/css/**':                     ['permitAll'],
-	'/**/images/**':                  ['permitAll'],
-	'/**/favicon.ico':                ['permitAll'],
-        '/user/**':                       ['permitAll']
+	'/':                                ['permitAll'],
+	'/index':                           ['permitAll'],
+	'/index.gsp':                       ['permitAll'],
+	'/**/js/**':                        ['permitAll'],
+	'/**/css/**':                       ['permitAll'],
+	'/**/images/**':                    ['permitAll'],
+	'/**/favicon.ico':                  ['permitAll'],
+        '/user/**':                         ['permitAll'],
+        '/home':                            ['permitAll'],
+        '/home/index':                      ['permitAll']
 ]
 

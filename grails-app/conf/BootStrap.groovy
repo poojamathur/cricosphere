@@ -1,4 +1,5 @@
 import com.cricosphere.domain.Role
+
 class BootStrap {
 
     def init = { servletContext ->
@@ -8,6 +9,8 @@ class BootStrap {
         Role.findByAuthority('ROLE_CORPORATE_MANAGER') ?: new Role(authority: 'ROLE_CORPORATE_MANAGER', id: 4).save()
         Role.findByAuthority('ROLE_PLAYER') ?: new Role(authority: 'ROLE_PLAYER', id: 5).save()
     }
+    
     def destroy = {
+    
     }
 }

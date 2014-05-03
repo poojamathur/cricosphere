@@ -1,6 +1,6 @@
 package com.cricosphere.controller
 
-class HomeController extends BaseController {
+class HomeController {
 
     def index() { }
 }

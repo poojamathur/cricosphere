@@ -18,9 +18,14 @@
         <g:layoutHead/>
     </head>
     <body>
+        <header class="container">
+            <hr />
+        </header>
         <div id="main" class="container">
             <g:layoutBody/>
         </div>
+        <footer class="container">
+        </footer>
         <script src="${resource(dir: 'js/vendor', file: 'jquery.min.js')}"></script>
         <script src="${resource(dir: 'js/vendor', file: 'bootstrap.min.js')}"></script>
         <script src="${resource(dir: 'js/vendor', file: 'jquery.validate.js')}"></script>
