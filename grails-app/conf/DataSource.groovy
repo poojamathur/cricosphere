@@ -3,7 +3,7 @@ dataSource {
     jmxExport = true
     driverClassName = "com.mysql.jdbc.Driver"
     username = "dev"
-    password = "puja"
+    password = "dev@2014"
 }
 hibernate {
     cache.use_second_level_cache = true
