@@ -3,3 +3,9 @@
     margin:50px auto; 
     padding:10px;
     }
+    .right {
+        float: right;
+    } 
+    .left {
+        float: left;
+    }

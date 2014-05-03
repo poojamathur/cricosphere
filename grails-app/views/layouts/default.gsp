@@ -14,16 +14,17 @@
     <link rel="stylesheet" type="text/css" href="${resource(dir: 'css/vendor', file: 'bootstrap.min.css')}">
     <link rel="stylesheet" type="text/css" href="${resource(dir: 'css/vendor', file: 'bootstrap-theme.min.css')}">
     <link rel="stylesheet" type="text/css" href="${resource(dir: 'css', file: 'main.css')}">
-    <script src="${resource(dir: 'js/vendor', file: 'jquery.min.js')}"></script>
-    <script src="${resource(dir: 'js/vendor', file: 'bootstrap.min.js')}"></script>
-    <script src="${resource(dir: 'js', file: 'main.js')}"></script>
-    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <!--<script src="js/vendor/modernizr-2.6.2.min.js"></script> -->
   <g:layoutHead/>
 </head>
 <body>
   <div id="main">
     <g:layoutBody/>
   </div>
-
+    <script src="${resource(dir: 'js/vendor', file: 'jquery.min.js')}"></script>
+    <script src="${resource(dir: 'js/vendor', file: 'bootstrap.min.js')}"></script>
+    <script src="${resource(dir: 'js/vendor', file: 'jquery.validate.js')}"></script>
+    <script src="${resource(dir: 'js', file: 'main.js')}"></script>
+    
 </body>
 </html>
