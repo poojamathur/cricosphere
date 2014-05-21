@@ -62,7 +62,7 @@ grails.project.dependency.resolution = {
 	compile ":spring-security-core:2.0-RC2"
         compile ":scaffolding:2.0.2"
         compile ':cache:1.1.1'
-
+        compile ":mail:1.0.4"
         // plugins needed at runtime but not for compilation
         runtime ":hibernate:3.6.10.9" // or ":hibernate4:4.3.4"
         runtime ":database-migration:1.3.8"

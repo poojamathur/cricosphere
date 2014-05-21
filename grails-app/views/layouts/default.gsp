@@ -14,14 +14,14 @@
         <link rel="stylesheet" type="text/css" href="${resource(dir: 'css/vendor', file: 'bootstrap.min.css')}">
         <link rel="stylesheet" type="text/css" href="${resource(dir: 'css/vendor', file: 'bootstrap-theme.min.css')}">
         <link rel="stylesheet" type="text/css" href="${resource(dir: 'css', file: 'main.css')}">
+        <link rel="stylesheet" type="text/css" href="${resource(dir: 'css', file: 'template.css')}">
         <script src="${resource(dir: 'js/vendor', file: 'modernizr-2.6.2.min.js')}"></script>
         <g:layoutHead/>
     </head>
     <body>
         <header class="container">
-            <hr />
-        </header>
-        <div id="main" class="container">
+         </header>
+        <div class="container">
             <g:layoutBody/>
         </div>
         <footer class="container">
