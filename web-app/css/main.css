@@ -33,19 +33,28 @@ a:hover {
 body {
     background-image: url('../images/image8.jpg');
     background-repeat: no-repeat;
-    font-family: cursive;
+    font-family: verdana;
 }
 .modal {
     font-family: cursive;
-    
+
 }
 .modal .modal-body .controls {
-   text-align:center;
-     display: block;
+    text-align:center;
+    display: block;
     margin-left: auto;
     margin-right: auto
 }
 
 #main {
     margin-top: 50px;
+}
+.form-div {
+/*    border: solid 2px #000;*/
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding:20px;
+    opacity: 0.9;
+    background-color: #99ccff;
 }

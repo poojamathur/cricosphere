@@ -3,23 +3,24 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Home</title>
+    <title>Home</title>
     <meta name="layout" content="default" />
   </head>
   <body>
-        <div id="main">
+    <div id="main">
       <div id="header"><a href="#">Cricosphere</a></div>
-      
+
       <!-- Button trigger modal -->
-              <div class="text-right">
+      <div class="text-right">
+       <g:link url="[action:'editDetails',controller:'user']">Edit</g:link>
         <a href="#logIn-Modal"  data-toggle="modal">
           Log in
         </a>
-         &nbsp &nbsp &nbsp &nbsp
+        &nbsp &nbsp &nbsp &nbsp
         <a href="#signUp-Modal" data-toggle="modal">
           Sign Up Now!
         </a>
-        </div>
+      </div>
 
       <!-- Menu Bar -->      
       <div id="menupanel">
@@ -33,7 +34,7 @@
         </ul>
       </div>
       <!-- Menu Bar End -->
-      
+
       <!-- Carousel -->
       <div id="banner">
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">

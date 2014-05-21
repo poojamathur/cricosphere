@@ -17,4 +17,8 @@ class UserController extends BaseController {
     def forgotpassword() {
         render(view:'forgetPassword')
     }
+    
+    def editDetails() {
+        render(view:'edit_details')
+    }
 }
