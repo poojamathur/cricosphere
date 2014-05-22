@@ -1,21 +1,19 @@
 /* User Sign Up Form Validation -- 23 April 2014 */
 console.log($("#signUp").length);
+$("#signUp").validate({
+    onkeyup: true,
+    errorPlacement: function(error, element) {
+        if (element.attr("id") === "agree") {
+            error.insertAfter(element.next());
+        } else {
+            error.insertAfter(element);
+        }
 
-$("#signUp").validate({ 
-        onkeyup: true,
-        errorPlacement: function(error, element) {
-            if(element.attr("id") === "agree") {
-    error.insertAfter(element.next());
-  } else {
-    error.insertAfter(element);
-  }
-    
-},
+    },
     rules: {
         Fname: {
             required: true
         },
-        
         password: {
             required: true,
             minlength: 5
@@ -53,6 +51,39 @@ $("#signUp").validate({
         agree: {
             checked: "Please "
         }
-        
+
+    }
+});
+/* Validation for Edit Details Form */
+
+$("#editDetails").validate({
+    onkeyup: true,
+    rules: {
+        Fname: {
+            required: true
+        },
+        Lname: {
+            required: true
+        },
+        gender: {
+            required: true
+        },
+        country: {
+            required: true
+        }
+    },
+    messages: {
+        Fname: {
+            required: "Please provide User First Name"
+        },
+        Lname: {
+            required: "Please provide User First Name"
+        },
+        gender: {
+            required: "Please provide a Gender"
+        },
+        counter: {
+            required: "Please provide a Country"
+        }
     }
 });

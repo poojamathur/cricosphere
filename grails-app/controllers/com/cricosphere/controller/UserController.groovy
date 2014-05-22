@@ -21,4 +21,9 @@ class UserController extends BaseController {
     def editDetails() {
         render(view:'edit_details')
     }
+    
+//    def updateDetails() {
+//        println 'params : ' + params
+//        userService.updateDetails(params)
+//    }
 }

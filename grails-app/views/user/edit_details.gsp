@@ -13,51 +13,77 @@
   </head>
   <body>
     <div class="container">
-      <!--      <div class="form-div">
-              <form role="form">
-        <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-        </div>
-        <div class="form-group">
-          <label for="exampleInputFile">File input</label>
-          <input type="file" id="exampleInputFile">
-          <p class="help-block">Example block-level help text here.</p>
-        </div>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox"> Check me out
-          </label>
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-      
-            </div>-->
       <div class="form-div">
         <div class="row text-center form-group">
           <div class="col-md-12"><h2>My Details</h2></div>
         </div>
-        <div class="row form-group">
-          <div class="col-md-2">First Name*</div>
-          <div class="col-md-10"><input type="text" class="form-control" id="inputEmail3" placeholder="First Name"></div>
-        </div>
-        <div class="row form-group">
-          <div class="col-md-2">Last Name*</div>
-          <div class="col-md-10"><input type="text" class="form-control" id="inputEmail3" placeholder="Last Name"></div>
-        </div>
-        <div class="row form-group">
-          <div class="col-md-2">DOB</div>
-          <div class="col-md-10"><input type="text" class="form-control" id="inputEmail3" placeholder="Date of Birth"></div>
-        </div>
-        <div class="row form-group">
-          <div class="col-md-2">Gender*</div>
-          <div class="col-md-10"><input type="text" class="form-control" id="inputEmail3" placeholder="Date of Birth"></div>
-        </div>
+        <form id="editDetails" name="editDetails" method="post" >
+          <div class="row form-group">
+            <div class="col-md-2">First Name*</div>
+            <div class="col-md-10">
+              <input type="text" class="form-control" id="Fname" name="Fname" placeholder="First Name"></div>
+          </div>
+          <div class="row form-group">
+            <div class="col-md-2">Last Name*</div>
+            <div class="col-md-10">
+              <input type="text" class="form-control" id="Lname" name="Lname" placeholder="Last Name"></div>
+          </div>
+          <div class="row form-group">
+            <div class="col-md-2">DOB</div>
+            <div class="col-md-10">
+              <input type="text" class="form-control" id="dob" name="dob" placeholder="Date of Birth"></div>
+          </div>
+          <div class="row form-group">
+            <div class="col-md-2">Gender*</div>
+            <div class="col-md-10"><button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
+                --Select-- <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu ">
+                <li>Male</li>
+                <li>Female</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row form-group">
+            <div class="col-md-2">Address</div>
+            <div class="col-md-10">
+              <textarea class="form-control" rows="3" id="address" name="address" placeholder="Address"></textarea>
+            </div>
+          </div>
+          <div class="row form-group">
+            <div class="col-md-2">Country*</div>
+            <div class="col-md-10">
+              <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
+                --Select-- <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu ">
+                <li>India</li>
+                <li>USA</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row form-group">
+            <div class="col-md-2">City</div>
+            <div class="col-md-10">
+              <input type="text" class="form-control" id="city" name="city" placeholder="City">
+            </div>
+          </div>
+          <div class="row form-group">
+            <div class="col-md-2">Contact No.</div>
+            <div class="col-md-10">
+              <input type="text" class="form-control" id="contact" name="contact" placeholder="Contact No.">
+            </div>
+          </div>
+          <div class="row form-group">
 
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-success">Submit</button>
+              <button type="reset" class="btn btn-success">Clear</button>
+            </div>
+
+
+          </div>
+        </form>
       </div>
     </div>
   </body>
