@@ -12,7 +12,7 @@
 
       <!-- Button trigger modal -->
       <div class="text-right">
-       <g:link url="[action:'editDetails',controller:'user']">Edit</g:link>
+        <g:link url="[action:'editDetails',controller:'user']">Edit</g:link>
         <a href="#logIn-Modal"  data-toggle="modal">
           Log in
         </a>
@@ -107,26 +107,32 @@
     <!-- Modal for Log In -->
     <div class="modal fade" id="logIn-Modal" tabindex="-1" role="dialog" aria-labelledby="logIn-ModalLabel" aria-hidden="true">
       <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
+        <div class="modal-content form-div">
+          <div class="modal-header text-center form-group">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title" id="logIn-ModalLabel">Log In</h4>
+            <h4 class="modal-title row text-center form-group" id="logIn-ModalLabel">Log In</h4>
           </div>
           <div class="modal-body" style="height:auto; width:auto;">
-            <g:form class="form-horizontal" role="form" id="logIn" name="logIn" url="[action:'create',controller:'user']" method="post">
+            <g:form class="form-horizontal" role="form" id="logIn" name="logIn" url="[action:'index',controller:'LoginController']" method="post">
               <div class="form-group">
-                <div class="col-xs-2"">
-                  <input type="email" id="logIn-email" placeholder="Email" name="logIn-email">
+                <div class="row form-group">
+                  <div class="col-xs-12">
+                    <input type="email" class="form-control" id="logIn-email" placeholder="Email" name="logIn-email">
+                  </div>
                 </div>
               </div>
               <div class="form-group">
-                <div class="col-xs-2"">
-                  <input type="password" id="logIn-password" placeholder="Enter Password" name="logIn-password">
+                <div class="row form-group">
+                  <div class="col-xs-12">
+                    <input type="password" class="form-control" id="logIn-password" placeholder="Enter Password" name="logIn-password">
+                  </div>
                 </div>
               </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-success">Log In</button>
+              <div class="row form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button type="submit" class="btn btn-success">Submit</button>
+                  <button type="reset" class="btn btn-success">Clear</button>
+                </div>
               </div>
             </g:form>
           </div>
@@ -138,33 +144,39 @@
   <!-- Modal for Sign Up-->
   <div class="modal fade" id="signUp-Modal" tabindex="-1" role="dialog" aria-labelledby="signUp-ModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content">
+      <div class="modal-content form-div">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4 class="modal-title" id="signUp-ModalLabel">Sign Up</h4>
+          <h4 class="modal-title row text-center form-group" id="signUp-ModalLabel">Sign Up</h4>
         </div>
         <div class="modal-body">
           <g:form class="form-horizontal" role="form" id="signUp" name="signUp" url="[action:'create',controller:'user']" method="post">
             <div class="form-group">
-              <div class="controls">
-                <input type="text" id="Fname" placeholder="First Name" name="Fname">
-                <input type="text" id="Lname" placeholder="Last Name" name="Lname">
-              </div>  
-            </div>
-            <div class="form-group">
-              <div class="controls">
-                <input type="email" id="email" placeholder="Email" name="email">
+              <div class="row form-group">
+                <div class="col-xs-12">
+                  <input type="text" id="Fname" placeholder="First Name" name="Fname">
+                  <input type="text" id="Lname" placeholder="Last Name" name="Lname">
+                </div>  
               </div>
             </div>
             <div class="form-group">
-              <div class="controls">
-                <input type="password" id="password" placeholder="Enter Password" name="password">
-                <input type="password" id="password2" placeholder="Confirm Password" name="password2">
+              <div class="row form-group">
+                <div class="col-xs-12">
+                  <input type="email" id="email" placeholder="Email" name="email">
+                </div>
               </div>
             </div>
             <div class="form-group">
-              <div class="col-sm-offset-2 col-sm-10">
-                <div class="controls">
+              <div class="row form-group">
+                <div class="col-xs-12">
+                  <input type="password" id="password" placeholder="Enter Password" name="password">
+                  <input type="password" id="password2" placeholder="Confirm Password" name="password2">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="row form-group">
+                <div class="col-sm-offset-2 col-sm-10">
                   <div class="checkbox" >
                     <input type="checkbox" id="agree" name="agree">
                     <label>I have read and agree to sign up terms </label>
@@ -172,10 +184,10 @@
                 </div>
               </div>
             </div>
-            <div class="form-group">
+            <div class="row form-group">
               <div class="col-sm-offset-2 col-sm-10">
-                <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-success">Sign Up Now</button>
+                <button type="submit" class="btn btn-success">Sign Up!</button>
+                <button type="reset" class="btn btn-success">Clear</button>
               </div>
             </div>
         </div>

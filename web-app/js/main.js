@@ -1,5 +1,8 @@
 /* User Sign Up Form Validation -- 23 April 2014 */
 console.log($("#signUp").length);
+
+
+
 $("#signUp").validate({
     onkeyup: true,
     errorPlacement: function(error, element) {

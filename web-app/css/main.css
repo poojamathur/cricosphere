@@ -6,21 +6,21 @@
 .right {
     float: right;
     cursor: pointer;
-    font-family: cursive;
+    font-family: Verdana;
     font-style: italic;
     color: #468A62;
     overflow: hidden;
 } 
 a:hover {
     color:#9ECAF9;
-    font-family: cursive;
+    font-family: Verdana;
     font-style: normal;
     text-decoration: none;
 }
 .left {
     float: left;
     cursor: pointer;
-    font-family: cursive;
+    font-family: Verdana;
     font-style: italic;
     color: #468A62;
 }
@@ -36,7 +36,7 @@ body {
     font-family: verdana;
 }
 .modal {
-    font-family: cursive;
+    font-family: Verdana;
 
 }
 .modal .modal-body .controls {

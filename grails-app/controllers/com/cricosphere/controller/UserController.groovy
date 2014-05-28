@@ -14,9 +14,9 @@ class UserController extends BaseController {
         userService.create(params)
     }
     
-    def forgotpassword() {
-        render(view:'forgetPassword')
-    }
+//    def forgotpassword() {
+//        render(view:'forgetPassword')
+//    }
     
     def editDetails() {
         render(view:'edit_details')

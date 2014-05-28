@@ -12,7 +12,7 @@
     <title>Edit Details</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container form-div">
       <div class="form-div">
         <div class="row text-center form-group">
           <div class="col-md-12"><h2>My Details</h2></div>
@@ -35,13 +35,12 @@
           </div>
           <div class="row form-group">
             <div class="col-md-2">Gender*</div>
-            <div class="col-md-10"><button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
-                --Select-- <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu ">
-                <li>Male</li>
-                <li>Female</li>
-              </ul>
+            <div class="col-md-10">
+              <select name="gender" class="selectpicker">
+                <option value="">Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
             </div>
           </div>
           <div class="row form-group">
@@ -53,13 +52,11 @@
           <div class="row form-group">
             <div class="col-md-2">Country*</div>
             <div class="col-md-10">
-              <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
-                --Select-- <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu ">
-                <li>India</li>
-                <li>USA</li>
-              </ul>
+              <select name="country" class="selectpicker">
+                <option value="">Country</option>
+                <option value="1">India</option>
+                <option value="2">USA</option>
+              </select>
             </div>
           </div>
           <div class="row form-group">
@@ -75,16 +72,37 @@
             </div>
           </div>
           <div class="row form-group">
-
             <div class="col-sm-offset-2 col-sm-10">
               <button type="submit" class="btn btn-success">Submit</button>
               <button type="reset" class="btn btn-success">Clear</button>
             </div>
-
-
           </div>
         </form>
+        <div class="row">
+  <div class="col-xs-6 col-sm-3">
+ <div class="fileinput fileinput-new" data-provides="fileinput">
+  <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
+    <img data-src="holder.js/100%x100%" alt="...">
+  </div>
+  <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"></div>
+  <div>
+    <span class="btn btn-default btn-file"><span class="fileinput-new">Select image</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
+    <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+  </div>
+</div>
+
+  </div>
+  <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+
+  <!-- Add the extra clearfix for only the required viewport -->
+  <div class="clearfix visible-xs"></div>
+
+  <div class="col-xs-6 col-sm-3"><input type="text"></input> <input type="text"></input</div>
+  
+</div>
+
       </div>
+      
     </div>
   </body>
 </html>
