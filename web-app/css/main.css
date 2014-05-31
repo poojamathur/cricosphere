@@ -1,3 +1,10 @@
+.container {
+    background-color: #333;
+    opacity: 0.9;
+    color: #f1f1f1;
+}
+
+
 .container-main {
     border: 2px solid #000;
     margin:50px auto; 

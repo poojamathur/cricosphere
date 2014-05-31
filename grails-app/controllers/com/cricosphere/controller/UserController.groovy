@@ -14,16 +14,12 @@ class UserController extends BaseController {
         userService.create(params)
     }
     
-//    def forgotpassword() {
-//        render(view:'forgetPassword')
-//    }
-    
-    def editDetails() {
-        render(view:'edit_details')
+    def login() {
+        println 'params : ' + params
+        if (params.ajax == 'true') {
+            render (view: 'ajax_login')
+        } else {
+            render (view: 'login')
+        }
     }
-    
-//    def updateDetails() {
-//        println 'params : ' + params
-//        userService.updateDetails(params)
-//    }
 }
