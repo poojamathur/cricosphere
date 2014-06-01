@@ -1,67 +1,19 @@
-.container {
-    background-color: #333;
-    opacity: 0.9;
-    color: #f1f1f1;
+/* line 3, ../../resources/scss/main.scss */
+body #cric-main {
+  min-height: 600px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
-
-
-.container-main {
-    border: 2px solid #000;
-    margin:50px auto; 
-    padding:10px;
+/* line 9, ../../resources/scss/main.scss */
+body .container {
+  background-color: #f1f1f1;
 }
-.right {
-    float: right;
-    cursor: pointer;
-    font-family: Verdana;
-    font-style: italic;
-    color: #468A62;
-    overflow: hidden;
-} 
-a:hover {
-    color:#9ECAF9;
-    font-family: Verdana;
-    font-style: normal;
-    text-decoration: none;
+/* line 11, ../../resources/scss/main.scss */
+body .container .article {
+  border: 1px solid #ccc;
 }
-.left {
-    float: left;
-    cursor: pointer;
-    font-family: Verdana;
-    font-style: italic;
-    color: #468A62;
-}
-.model-trigger {
-    width: 200px;
-    height: 50px;
-    padding-top: 10px;
-
-}
-body {
-    background-image: url('../images/image8.jpg');
-    background-repeat: no-repeat;
-    font-family: verdana;
-}
-.modal {
-    font-family: Verdana;
-
-}
-.modal .modal-body .controls {
-    text-align:center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto
-}
-
-#main {
-    margin-top: 50px;
-}
-.form-div {
-/*    border: solid 2px #000;*/
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    padding:20px;
-    opacity: 0.9;
-    background-color: #99ccff;
+/* line 15, ../../resources/scss/main.scss */
+body .container .article h3 span.label {
+  display: block;
+  padding: 10px 0px;
 }

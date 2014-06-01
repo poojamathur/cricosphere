@@ -19,17 +19,6 @@
         <g:layoutHead/>
     </head>
     <body>
-        <header class="container">
-            <!--<div class="row">&times;</div>-->
-            <div class="row">
-                <div class="col-lg-2 pull-right">
-                    <a href="${createLink(action: 'login', controller: 'user')}" class="login-link" data-ajax-url="${createLink(action: 'login', controller: 'user')}">LOGIN</a>
-                    <span class="seprator">|</span>
-                    <a href="">SIGN UP</a>
-                </div>
-            </div>
-            <div class="row">&nbsp;</div>
-        </header>
         <div id="cric-main" class="container">
             <g:layoutBody/>
         </div>

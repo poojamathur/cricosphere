@@ -7,11 +7,7 @@
             <h3 class="modal-title">Sign In to continue</h3>
         </div>
         <div class="modal-body">
-            
-        </div>
-        <div class="modal-footer">
-            <input type="button" class="btn btn-default" data-dismiss="modal" value="Close" />
-            <input type="button" class="btn btn-primary" value="Save changes" />
+            <g:render template="/user/loginForm" />
         </div>
     </div>
 </div>
