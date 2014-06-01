@@ -5,7 +5,11 @@ body {
         padding-top: 30px;
         padding-bottom: 30px;
     }
-
+    
+    label.error {
+        color: #D9534F
+    }
+    
     .container {
         background-color: #f1f1f1;
         .article {

@@ -5,14 +5,18 @@ body #cric-main {
   padding-bottom: 30px;
 }
 /* line 9, ../../resources/scss/main.scss */
+body label.error {
+  color: #d9534f;
+}
+/* line 13, ../../resources/scss/main.scss */
 body .container {
   background-color: #f1f1f1;
 }
-/* line 11, ../../resources/scss/main.scss */
+/* line 15, ../../resources/scss/main.scss */
 body .container .article {
   border: 1px solid #ccc;
 }
-/* line 15, ../../resources/scss/main.scss */
+/* line 19, ../../resources/scss/main.scss */
 body .container .article h3 span.label {
   display: block;
   padding: 10px 0px;

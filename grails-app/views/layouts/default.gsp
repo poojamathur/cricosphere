@@ -42,7 +42,7 @@
         </footer>
         <script src="${resource(dir: 'js/vendor', file: 'jquery.min.js')}"></script>
         <script src="${resource(dir: 'js/vendor', file: 'bootstrap.min.js')}"></script>
-        <script src="${resource(dir: 'js/vendor', file: 'jquery.validate.js')}"></script>
+        <script src="${resource(dir: 'js/vendor', file: 'jquery.validate.min.js')}"></script>
         <script src="${resource(dir: 'js', file: 'main.js')}"></script>
     </body>
 </html>
