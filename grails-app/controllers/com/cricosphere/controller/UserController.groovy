@@ -15,12 +15,19 @@ class UserController extends BaseController {
     }
     
     def login() {
-        println 'params : ' + params
         if (params.ajax == 'true') {
             render (view: 'ajaxLogin')
         } else {
             render (view: 'login')
         }
+    }
+    
+    def signUp() {
+        if (params.ajax == 'true') {
+            render (view: 'ajaxSignUp')
+        } else {
+            render (view: 'signUp')
+        }        
     }
     
     def resetPassword() {

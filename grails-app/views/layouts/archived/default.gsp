@@ -11,12 +11,16 @@
         <title><g:layoutTitle default="Cricosphere"/></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
-        <link rel="stylesheet" type="text/css" href="${resource(dir: 'css', file: 'main.css')}" />
+        <link rel="stylesheet" type="text/css" href="${resource(dir: 'css/vendor', file: 'bootstrap.min.css')}">
+        <link rel="stylesheet" type="text/css" href="${resource(dir: 'css/vendor', file: 'bootstrap-theme.min.css')}">
+        <link rel="stylesheet" type="text/css" href="${resource(dir: 'css', file: 'main.css')}">
+        <link rel="stylesheet" type="text/css" href="${resource(dir: 'css', file: 'template.css')}">
+        <script src="${resource(dir: 'js/vendor', file: 'modernizr-2.6.2.min.js')}"></script>
         <g:layoutHead/>
     </head>
     <body>
         <header class="container">
+            <!--<div class="row">&times;</div>-->
             <div class="row">
                 <div class="col-lg-2 pull-right">
                     <a href="${createLink(action: 'login', controller: 'user')}" class="login-link" data-ajax-url="${createLink(action: 'login', controller: 'user')}">LOGIN</a>
@@ -36,9 +40,9 @@
                 </div>
             </div>
         </footer>
-        <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.min.js"></script>
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-        <script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.12.0/jquery.validate.min.js"></script>
+        <script src="${resource(dir: 'js/vendor', file: 'jquery.min.js')}"></script>
+        <script src="${resource(dir: 'js/vendor', file: 'bootstrap.min.js')}"></script>
+        <script src="${resource(dir: 'js/vendor', file: 'jquery.validate.min.js')}"></script>
         <script src="${resource(dir: 'js', file: 'main.js')}"></script>
     </body>
 </html>
