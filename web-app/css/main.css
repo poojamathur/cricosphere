@@ -1,1 +1,68 @@
-body #cric-main{min-height:600px;padding-top:30px;padding-bottom:30px}body label.error{color:#D9534F}body .container{background-color:#f1f1f1}body .container .article{border:1px solid #ccc}body .container .article h3 span.label{display:block;padding:10px 0px}
+@font-face {
+  font-family: 'Josefin Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Josefin Slab"), local("JosefinSlab"), url(http://themes.googleusercontent.com/static/fonts/josefinslab/v4/46aYWdgz-1oFX11flmyEfXhCUOGz7vYGh680lGh-uXM.woff) format("woff");
+}
+
+/* line 7, ../../resources/scss/main.scss */
+body {
+  margin: 0;
+  padding: 0;
+  /*    font-family: 'Josefin Slab', arial, verdana;
+      font-size: 13px;*/
+  /* Global   */
+  /*  jquery ui   */
+}
+/* line 13, ../../resources/scss/main.scss */
+body header.container {
+  border: 1px solid #ddd;
+  padding: 10px 0px;
+}
+/* line 17, ../../resources/scss/main.scss */
+body section.container {
+  min-height: 600px;
+  border: 1px solid #ddd;
+}
+/* line 20, ../../resources/scss/main.scss */
+body section.container .article {
+  border: 1px solid #ddd;
+}
+/* line 23, ../../resources/scss/main.scss */
+body section.container .article h3 span {
+  display: block;
+}
+/* line 29, ../../resources/scss/main.scss */
+body footer.container {
+  border: 1px solid #ddd;
+}
+/* line 35, ../../resources/scss/main.scss */
+body .modal .modal-header h3.modal-title {
+  font-weight: bold;
+}
+/* line 43, ../../resources/scss/main.scss */
+body label.error {
+  color: #D9534F;
+}
+/* line 46, ../../resources/scss/main.scss */
+body .cric-link {
+  color: #4173C9;
+  text-decoration: none;
+}
+/* line 49, ../../resources/scss/main.scss */
+body .cric-link:hover {
+  text-decoration: underline;
+}
+/* line 53, ../../resources/scss/main.scss */
+body .container {
+  background-color: #f1f1f1;
+}
+/* line 56, ../../resources/scss/main.scss */
+body .row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+/* line 63, ../../resources/scss/main.scss */
+body .ui-widget-overlay.ui-front {
+  background-repeat: repeat;
+}
