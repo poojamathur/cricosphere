@@ -11,7 +11,7 @@
         <title><g:layoutTitle default="Cricosphere"/></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="//ajax.aspnetcdn.com/ajax/jquery.ui/1.10.4/themes/flick/jquery-ui.css" rel="stylesheet" />
         <link rel="stylesheet" type="text/css" href="${resource(dir: 'css', file: 'main.css')}" />
         <g:layoutHead/>
     </head>
@@ -37,7 +37,7 @@
             </div>
         </footer>
         <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.min.js"></script>
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="//ajax.aspnetcdn.com/ajax/jquery.ui/1.10.4/jquery-ui.min.js"></script>
         <script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.12.0/jquery.validate.min.js"></script>
         <script src="${resource(dir: 'js', file: 'main.js')}"></script>
     </body>
