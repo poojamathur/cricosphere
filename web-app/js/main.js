@@ -88,7 +88,21 @@
             $('#cric-login').validate();
         };
         this.signUpForm = function() {
-            $('#cric-signup').validate();
+            $('#cric-signup').validate({
+                groups: {
+                    username: 'firstname lastname',
+                    password: 'password confirm-password'
+                },
+                errorPlacement: function(error, element) {
+                    if (element.attr('name') === 'firstname' || element.attr('name') === 'lastname') {
+                        error.insertAfter('#lastname');
+                    } else if (element.attr('name') === 'password' || element.attr('name') === 'confirm-password') {
+                        error.insertAfter('#confirm-password');
+                    } else {
+                        error.insertAfter(element);
+                    }
+                }
+            });
         };
     };
 

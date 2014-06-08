@@ -4,7 +4,7 @@
         <a href="${createLink(action: 'login', controller: 'auth')}">Log In</a>
     </div>
 </div>
-<form role="form" id="cric-signup">
+<form role="form" id="cric-signup" type="post" action="${createLink(action: 'create', controller: 'user')}">
     <div class="form-group cric-2col">
         <label for="email">Name</label>
         <input type="text" class="form-control" name="firstname" id="firstname" placeholder="First Name" required="required" />
