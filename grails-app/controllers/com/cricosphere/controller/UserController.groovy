@@ -1,6 +1,7 @@
 package com.cricosphere.controller
 
 import com.cricosphere.services.UserService
+import grails.converters.JSON
 
 class UserController extends BaseController {
     def userService
@@ -10,8 +11,8 @@ class UserController extends BaseController {
     }
     
     def create() {
-        println 'params : ' + params
-        userService.create(params)
+        def response = userService.create(params)
+        render response as JSON
     }
    
     def signUp() {
