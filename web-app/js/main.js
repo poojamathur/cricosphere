@@ -12,7 +12,7 @@
     this.onloadEvents = function() {
         $(function() {
             $('#cric-login').length && app.validate.loginForm();
-            $('#signup-form').length && app.validate.signUpForm();
+            $('#cric-signup').length && app.validate.signUpForm();
         });
     };
 
@@ -88,7 +88,7 @@
             $('#cric-login').validate();
         };
         this.signUpForm = function() {
-            $('#signup-form').validate();
+            $('#cric-signup').validate();
         };
     };
 

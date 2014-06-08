@@ -1,64 +1,64 @@
-@font-face {
-  font-family: 'Josefin Slab';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Josefin Slab"), local("JosefinSlab"), url(http://themes.googleusercontent.com/static/fonts/josefinslab/v4/46aYWdgz-1oFX11flmyEfXhCUOGz7vYGh680lGh-uXM.woff) format("woff");
-}
-
-/* line 7, ../../resources/scss/main.scss */
+/* line 1, ../../resources/scss/main.scss */
 body {
   margin: 0;
   padding: 0;
-  /*    font-family: 'Josefin Slab', arial, verdana;
-      font-size: 13px;*/
   /* Global   */
+  /* bootstrap    */
   /*  jquery ui   */
 }
-/* line 13, ../../resources/scss/main.scss */
+/* line 5, ../../resources/scss/main.scss */
 body header.container {
   border: 1px solid #ddd;
   padding: 10px 0px;
 }
-/* line 17, ../../resources/scss/main.scss */
+/* line 9, ../../resources/scss/main.scss */
 body section.container {
   min-height: 600px;
   border: 1px solid #ddd;
 }
-/* line 20, ../../resources/scss/main.scss */
+/* line 12, ../../resources/scss/main.scss */
 body section.container .article {
   border: 1px solid #ddd;
 }
-/* line 23, ../../resources/scss/main.scss */
+/* line 15, ../../resources/scss/main.scss */
 body section.container .article h3 span {
   display: block;
 }
-/* line 29, ../../resources/scss/main.scss */
+/* line 21, ../../resources/scss/main.scss */
 body footer.container {
   border: 1px solid #ddd;
 }
-/* line 35, ../../resources/scss/main.scss */
+/* line 27, ../../resources/scss/main.scss */
 body .modal .modal-header h3.modal-title {
   font-weight: bold;
 }
-/* line 43, ../../resources/scss/main.scss */
+/* line 35, ../../resources/scss/main.scss */
 body label.error {
   color: #D9534F;
 }
-/* line 46, ../../resources/scss/main.scss */
+/* line 38, ../../resources/scss/main.scss */
 body .cric-link {
   color: #4173C9;
   text-decoration: none;
 }
-/* line 49, ../../resources/scss/main.scss */
+/* line 41, ../../resources/scss/main.scss */
 body .cric-link:hover {
   text-decoration: underline;
 }
-/* line 53, ../../resources/scss/main.scss */
-body .row {
-  margin-left: 0px;
-  margin-right: 0px;
+/* line 50, ../../resources/scss/main.scss */
+body form .form-group.cric-2col label {
+  display: block;
 }
-/* line 60, ../../resources/scss/main.scss */
+/* line 53, ../../resources/scss/main.scss */
+body form .form-group.cric-2col input.form-control {
+  display: inline-block;
+  width: 49%;
+}
+/* line 56, ../../resources/scss/main.scss */
+body form .form-group.cric-2col input.form-control:nth-child(2) {
+  margin-right: 1%;
+}
+/* line 65, ../../resources/scss/main.scss */
 body .ui-widget-overlay.ui-front {
   background-repeat: repeat;
 }
