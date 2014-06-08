@@ -54,15 +54,11 @@ body .cric-link:hover {
   text-decoration: underline;
 }
 /* line 53, ../../resources/scss/main.scss */
-body .container {
-  background-color: #f1f1f1;
-}
-/* line 56, ../../resources/scss/main.scss */
 body .row {
   margin-left: 0px;
   margin-right: 0px;
 }
-/* line 63, ../../resources/scss/main.scss */
+/* line 60, ../../resources/scss/main.scss */
 body .ui-widget-overlay.ui-front {
   background-repeat: repeat;
 }

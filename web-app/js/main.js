@@ -12,11 +12,13 @@
     this.onloadEvents = function() {
         $(function() {
             $('#cric-login').length && app.validate.loginForm();
+            $('#signup-form').length && app.validate.signUpForm();
         });
     };
 
     this.bindEvents = function() {
         app.body.on('click', '.login-link', app.modals.showLoginModal);
+        app.body.on('click', '.signup-link', app.modals.showSignUpModal);
     };
 
     this.modals = new function() {
@@ -25,6 +27,14 @@
             app.utils.ajaxModal($(this), {
                 successCallback: function() {
                     app.validate.loginForm();
+                }
+            });
+        };
+        this.showSignUpModal = function(e) {
+            e.preventDefault();
+            app.utils.ajaxModal($(this), {
+                successCallback: function() {
+                    app.validate.signUpForm();
                 }
             });
         };
@@ -76,7 +86,9 @@
     this.validate = new function() {
         this.loginForm = function() {
             $('#cric-login').validate();
-            console.log('validation initialized');
+        };
+        this.signUpForm = function() {
+            $('#signup-form').validate();
         };
     };
 

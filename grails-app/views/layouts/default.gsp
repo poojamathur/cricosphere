@@ -21,7 +21,7 @@
             <div class="row">
                 <div class="col-lg-2 pull-right">
                     <div class="pull-right">
-                        <a href="${createLink(action: 'login', controller: 'user')}" class="login-link cric-link" data-ajax-url="${createLink(action: 'login', controller: 'user')}">LOGIN</a>
+                        <a href="${createLink(action: 'login', controller: 'auth')}" class="login-link cric-link" data-ajax-url="${createLink(action: 'login', controller: 'auth')}">LOGIN</a>
                         <span class="seprator">|</span>
                         <a href="${createLink(action: 'signUp', controller: 'user')}" class="signup-link cric-link" data-ajax-url="${createLink(action: 'signUp', controller: 'user')}">SIGN UP</a>
                     </div>

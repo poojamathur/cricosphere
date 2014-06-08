@@ -7,7 +7,7 @@
             <h3 class="modal-title">Sign in to continue</h3>
         </div>
         <div class="modal-body">
-            <g:render template="/user/loginForm" />
+            <g:render template="/auth/loginForm" />
         </div>
     </div>
 </div>
